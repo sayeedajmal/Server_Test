@@ -1,0 +1,15 @@
+.table-view {
+  -fx-background-color: rgb(152, 178, 236);
+}
+.cell {
+  -fx-text-fill: red;
+  -fx-text-align: center;
+  -fx-align-items: center;
+  -fx-align-content: center;
+}
+.table-row-cell:odd {
+  -fx-background-color: rgb(194, 195, 201);
+}
+.table-row-cell:even {
+  -fx-background-color: rgb(238, 232, 232);
+}

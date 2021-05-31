@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Font?>
+
+<FlowPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="574.0" prefWidth="1091.0" rowValignment="BASELINE" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Javafx.Controller">
+   <children>
+      <AnchorPane prefHeight="577.0" prefWidth="1086.0">
+         <children>
+            <JFXTextField fx:id="myname" alignment="CENTER" focusColor="#2757e8" labelFloat="true" layoutX="38.0" layoutY="115.0" prefHeight="26.0" prefWidth="232.0" promptText="Enter Your Name" unFocusColor="BLACK" />
+            <JFXTextField fx:id="fathername" alignment="CENTER" focusColor="#2757e8" labelFloat="true" layoutX="38.0" layoutY="175.0" prefHeight="26.0" prefWidth="232.0" promptText="Enter Your Father's Name" unFocusColor="BLACK" />
+            <JFXTextField fx:id="mothername" alignment="CENTER" focusColor="#2757e8" labelFloat="true" layoutX="38.0" layoutY="233.0" prefHeight="26.0" prefWidth="232.0" promptText="Enter Your Mother's Name" unFocusColor="BLACK" />
+            <TableView fx:id="tableview" layoutX="512.0" layoutY="70.0" prefHeight="472.0" prefWidth="558.0" stylesheets="@../styles/style.css">
+               <columns>
+                  <TableColumn fx:id="name" editable="false" prefWidth="133.0" text="Your Name" />
+                  <TableColumn fx:id="father" editable="false" minWidth="0.0" prefWidth="235.0" text="Father Name" />
+                  <TableColumn fx:id="mother" editable="false" minWidth="0.0" prefWidth="188.0" text="Mother Name" />
+               </columns>
+            </TableView>
+            <Label alignment="CENTER" layoutX="254.0" layoutY="14.0" prefHeight="32.0" prefWidth="516.0" style="-fx-background-color: lightgreen;" text="This is For Server Testing">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="154.0" layoutY="359.0" onAction="#add" prefHeight="55.0" prefWidth="112.0" ripplerFill="RED" style="-fx-background-color: lightblue;" text="Add">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</FlowPane>
